@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+
+	</head>
+	
+	<body >
+		<h1>I'll become yellow</h1>
+		<div>
+			<form>
+				<input  type="button" value="Click me" onclick="sayHello()">
+			</form>
+		</div>
+		<p id="myP">blah</p>
+		
+		
+		<script type="text/javascript">
+			//function to calculate the area with parameters
+			function calcArea(width, length){
+                var area = width * length;
+                return area; //will return data 
+            }
+			
+            var floor = calcArea(3, 4); //var floor to save the returned data from the called method
+            
+			document.getElementById('myP').innerHTML = "Area is "+floor ; //write to webpage 
+			
+			function sayHello(){
+				document.getElementById('myP').innerHTML = "Hello"; //replace the elements text content
+				 document.getElementsByTagName("h1")[0].style.color = "yellow"; //change the css
+			}
+			
+		</script>
+	</body>
+</html>
+	
